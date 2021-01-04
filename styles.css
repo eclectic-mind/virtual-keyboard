@@ -1,0 +1,130 @@
+html,
+body,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+body {
+  background: #ffffff;
+}
+
+textarea {
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 20px;
+  height: 50vh;
+  min-height: 300px;
+}
+
+.keyboard-container {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  background-color: #352d4c;
+  position: fixed;
+  bottom: 0;
+}
+
+.keyboard {
+  margin: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  padding: 0 10px;
+}
+
+.hide {
+  position: absolute;
+  top: -38px;
+  left: 40px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #352d4c;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  border: solid 2px #352d4c;
+}
+
+.hide:hover {
+  background-color: #d0c3f8;
+}
+
+.keyboard button {
+  background: rgba(255, 255, 255, 0.3);
+  height: 40px;
+  flex-basis: 70px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.keyboard button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.keyboard button:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.short {
+  max-width: 70px;
+}
+
+.semi-long {
+  max-width: 120px;
+  flex-grow: 1;
+}
+.long {
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.keyboard .active {
+  color: yellow;
+  background: rgba(255, 255, 0, 0.3);
+}
+
+.keyboard .active:hover {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.keyboard .active:focus {
+  background: rgba(255, 255, 0, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+  .keyboard button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .keyboard button {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+.hidden {
+  display: none;
+}
