@@ -36,6 +36,9 @@ textarea {
 
 .keyboard {
   margin: 1em;
+  opacity: 1;
+  height: auto;
+  transition: all ease-in-out 0.3s;
 }
 
 .row {
@@ -126,5 +129,15 @@ button {
 }
 
 .hidden {
+  /* display: none; */
+  height: 0px;
+  margin: 0px;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: all ease-in-out 1s; */
+}
+
+.invisible {
   display: none;
+  visibility: hidden;
 }
